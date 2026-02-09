@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+    <!-- Squircle Container (iOS style) -->
+    <path d="M512 256C512 450 450 512 256 512C62 512 0 450 0 256C0 62 62 0 256 0C450 0 512 62 512 256Z" fill="#171717"/>
+    
+    <!-- Logo Center -->
+    <g transform="translate(106, 106) scale(3)">
+        <path d="M20 20 H60 L50 40 H10 Z" fill="#ffffff"/>
+        <path d="M50 60 H90 L80 80 H40 Z" fill="#E2000F"/>
+        <!-- Emphasize connection on dark bg -->
+        <path d="M55 40 L45 60" stroke="#666" stroke-width="2" />
+    </g>
+</svg>

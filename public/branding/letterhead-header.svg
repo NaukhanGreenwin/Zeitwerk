@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="150" viewBox="0 0 800 150" fill="none">
+    <!-- Top Bar Accent -->
+    <path d="M0 0 H800 V4 H0 Z" fill="#E2000F"/>
+    
+    <!-- Logo Left -->
+    <g transform="translate(40, 40) scale(0.6)">
+        <path d="M20 20 H60 L50 40 H10 Z" fill="#171717"/>
+        <path d="M50 60 H90 L80 80 H40 Z" fill="#E2000F"/>
+        <path d="M55 40 L45 60" stroke="#ccc" stroke-width="1" />
+    </g>
+    <text x="100" y="73" font-family="-apple-system, sans-serif" font-weight="600" font-size="32" letter-spacing="-0.03em" fill="#171717">Zeitwerk</text>
+    
+    <!-- Contact Info Right -->
+    <text x="760" y="65" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" fill="#666">zeitwerk.io</text>
+    <!-- Removed Zurich, Switzerland -->
+</svg>

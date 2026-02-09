@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#ffffff"/>
+    
+    <!-- Grid Pattern -->
+    <defs>
+        <pattern id="slideGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <rect width="1" height="1" fill="#eee"/>
+        </pattern>
+    </defs>
+    <rect width="1920" height="1080" fill="url(#slideGrid)" />
+    
+    <!-- Bottom Right Logo Watermark -->
+    <g transform="translate(1800, 1000) scale(0.5)" opacity="0.3">
+         <path d="M20 20 H60 L50 40 H10 Z" fill="#171717"/>
+        <path d="M50 60 H90 L80 80 H40 Z" fill="#E2000F"/>
+    </g>
+    
+    <!-- Title Placeholder -->
+    <text x="120" y="450" font-family="-apple-system, sans-serif" font-weight="700" font-size="96" letter-spacing="-0.04em" fill="#171717">Presentation Title</text>
+    <text x="120" y="520" font-family="-apple-system, sans-serif" font-weight="400" font-size="48" fill="#666">Subtitle goes here</text>
+    
+    <!-- Red Accent Bar -->
+    <rect x="0" y="1070" width="1920" height="10" fill="#E2000F"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none">
+    <!-- Header Container -->
+    <rect width="800" height="100" fill="#f9f9f9"/>
+    
+    <!-- Logo -->
+    <g transform="translate(40, 20) scale(0.6)">
+        <path d="M20 20 H60 L50 40 H10 Z" fill="#171717"/>
+        <path d="M50 60 H90 L80 80 H40 Z" fill="#E2000F"/>
+    </g>
+    <text x="100" y="55" font-family="-apple-system, sans-serif" font-weight="600" font-size="32" letter-spacing="-0.03em" fill="#171717">INVOICE</text>
+    
+    <!-- Details -->
+    <text x="760" y="45" text-anchor="end" font-family="-apple-system, sans-serif" font-weight="600" font-size="14" fill="#171717">INVOICE #0001</text>
+    <text x="760" y="65" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" fill="#666">Date: Oct 24, 2024</text>
+</svg>

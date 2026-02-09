@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" fill="none">
+    <rect width="1500" height="500" fill="#ffffff"/>
+    <rect width="1500" height="500" fill="url(#grid)" opacity="0.5"/>
+    
+    <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f0" stroke-width="1"/>
+        </pattern>
+    </defs>
+    
+    <!-- Centered Logo -->
+    <g transform="translate(580, 100) scale(1.5)">
+         <path d="M20 20 H60 L50 40 H10 Z" fill="#171717"/>
+        <path d="M50 60 H90 L80 80 H40 Z" fill="#E2000F"/>
+        <path d="M55 40 L45 60" stroke="#ccc" stroke-width="1" />
+    </g>
+    
+    <text x="750" y="320" text-anchor="middle" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="80" letter-spacing="-0.03em" fill="#171717">Zeitwerk</text>
+    <text x="750" y="380" text-anchor="middle" font-family="-apple-system, system-ui, sans-serif" font-weight="400" font-size="32" letter-spacing="0.05em" fill="#666">PRECISION BUSINESS AUTOMATION</text>
+</svg>

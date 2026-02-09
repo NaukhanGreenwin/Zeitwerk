@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeitwerk Brand Kit</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: -apple-system, sans-serif;
+            padding: 40px;
+            color: #171717;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #171717;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: #333;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Zeitwerk Brand Assets</h1>
+        <p>Right-click and "Save As" or download the source files below.</p>
+
+        <div class="grid">
+            <!-- Mark -->
+            <div class="card">
+                <span class="label">Logomark (Icon)</span>
+                <img src="zeitwerk-mark.svg" alt="Zeitwerk Mark">
+                <a href="zeitwerk-mark.svg" download class="btn">Download SVG</a>
+            </div>
+
+            <!-- Full Logo -->
+            <div class="card">
+                <span class="label">Full Lockup (Light)</span>
+                <img src="zeitwerk-full.svg" alt="Zeitwerk Logo Full">
+                <a href="zeitwerk-full.svg" download class="btn">Download SVG</a>
+            </div>
+
+            <!-- Dark Mode -->
+            <div class="card" style="background: #111;">
+                <span class="label" style="color: #888;">Full Lockup (Dark)</span>
+                <img src="zeitwerk-dark.svg" style="border: 1px solid #333;" alt="Zeitwerk Logo Dark">
+                <a href="zeitwerk-dark.svg" download class="btn" style="background: white; color: black;">Download
+                    SVG</a>
+            </div>
+
+            <!-- Social Cover -->
+            <div class="card" style="grid-column: 1 / -1;">
+                <span class="label">Social Media Cover</span>
+                <img src="social-cover.svg" alt="Social Cover">
+                <a href="social-cover.svg" download class="btn">Download SVG</a>
+            </div>
+
+            <div style="grid-column: 1 / -1; border-top: 1px solid #eee; margin-top: 20px;"></div>
+            <h2 style="grid-column: 1 / -1; text-align: center; color: #888; font-weight: 400; font-size: 18px;">
+                CORPORATE IDENTITY</h2>
+
+            <!-- Letterhead -->
+            <div class="card">
+                <span class="label">Letterhead / Doc Header</span>
+                <img src="letterhead-header.svg" alt="Letterhead">
+                <a href="letterhead-header.svg" download class="btn">Download SVG</a>
+            </div>
+
+            <!-- Invoice -->
+            <div class="card">
+                <span class="label">Invoice Header</span>
+                <img src="invoice-header.svg" alt="Invoice Header">
+                <a href="invoice-header.svg" download class="btn">Download SVG</a>
+            </div>
+
+            <!-- Slide Deck -->
+            <div class="card" style="grid-column: 1 / -1;">
+                <span class="label">Presentation Slide (16:9)</span>
+                <img src="slide-template.svg" alt="Slide Template">
+                <a href="slide-template.svg" download class="btn">Download SVG</a>
+            </div>
+
+            <!-- App Icon -->
+            <div class="card">
+                <span class="label">Mobile App Icon</span>
+                <img src="app-icon.svg" width="128" alt="App Icon">
+                <br>
+                <a href="app-icon.svg" download class="btn">Download SVG</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

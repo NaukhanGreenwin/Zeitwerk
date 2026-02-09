@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 400 100" fill="none">
+    <!-- Icon -->
+    <g transform="translate(20, 10) scale(0.8)">
+        <path d="M20 20 H60 L50 40 H10 Z" fill="#171717"/>
+        <path d="M50 60 H90 L80 80 H40 Z" fill="#E2000F"/>
+        <path d="M55 40 L45 60" stroke="#ccc" stroke-width="1" />
+    </g>
+    
+    <!-- Text -->
+    <text x="110" y="65" font-family="'Inter', -apple-system, sans-serif" font-weight="600" font-size="48" letter-spacing="-0.03em" fill="#171717">Zeitwerk</text>
+</svg>
