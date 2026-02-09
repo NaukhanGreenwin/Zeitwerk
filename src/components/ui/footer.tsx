@@ -51,8 +51,9 @@ export function Footer({
                                         size="icon"
                                         className="h-10 w-10 rounded-full"
                                         asChild
+                                        aria-label={link.label}
                                     >
-                                        <a href={link.href} target="_blank" aria-label={link.label}>
+                                        <a href={link.href} target="_blank" rel="noopener noreferrer">
                                             {link.icon}
                                         </a>
                                     </Button>

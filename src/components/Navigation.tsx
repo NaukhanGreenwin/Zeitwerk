@@ -80,6 +80,7 @@ export default function Navigation() {
                         <button
                             onClick={() => document.dispatchEvent(new Event("open-contact-modal"))}
                             className="hidden md:flex items-center gap-1.5 px-5 py-2.5 bg-neutral-900 text-white text-[14px] font-medium rounded-full hover:bg-[#E2000F] transition-colors duration-300"
+                            aria-label="Get started with Zeitwerk"
                         >
                             Get Started
                         </button>
@@ -88,6 +89,8 @@ export default function Navigation() {
                         <button
                             onClick={() => setMobileOpen(!mobileOpen)}
                             className="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-neutral-100 transition-colors"
+                            aria-label="Toggle navigation menu"
+                            aria-expanded={mobileOpen}
                         >
                             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
                         </button>
