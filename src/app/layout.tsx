@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MobileMotionProvider from "@/components/MobileMotionProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,10 +39,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        {/* Blocking script: adds .no-motion on mobile BEFORE first paint */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if(window.innerWidth<=768){document.documentElement.classList.add('no-motion')}`,
+          }}
+        />
+      </head>
       <body className={`${inter.className} antialiased bg-white text-neutral-900`}>
-        {children}
+        <MobileMotionProvider>{children}</MobileMotionProvider>
       </body>
     </html>
   );
 }
+

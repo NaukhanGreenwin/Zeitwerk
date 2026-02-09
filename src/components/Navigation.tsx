@@ -30,9 +30,8 @@ export default function Navigation() {
 
     return (
         <motion.nav
-            initial={{ y: -100 }}
+            initial={false}
             animate={{ y: 0 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || mobileOpen
                 ? "bg-white/80 backdrop-blur-xl border-b border-neutral-200/50"
                 : "bg-transparent"
@@ -102,7 +101,7 @@ export default function Navigation() {
             <AnimatePresence>
                 {mobileOpen && (
                     <motion.div
-                        initial={{ height: 0, opacity: 0 }}
+                        initial={false}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}

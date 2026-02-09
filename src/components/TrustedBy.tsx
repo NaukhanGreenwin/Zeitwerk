@@ -40,7 +40,7 @@ export default function TrustedBy() {
         <section className="py-16 bg-neutral-50/50 border-y border-neutral-100">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <motion.p
-                    initial={{ opacity: 0 }}
+                    initial={false}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     className="text-center text-[13px] font-medium text-neutral-500 uppercase tracking-[0.15em] mb-8"

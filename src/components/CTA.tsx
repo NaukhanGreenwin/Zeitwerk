@@ -22,20 +22,18 @@ export default function CTA() {
 
                 {/* Headline */}
                 <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={false}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.1 }}
                     className="text-[clamp(1.5rem,5vw,3.75rem)] font-semibold leading-[1.08] tracking-[-0.035em] text-white mb-3 md:mb-5"
                 >
                     Ready to automate?
                 </motion.h2>
 
                 <motion.p
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={false}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-[15px] md:text-[19px] text-neutral-400 mb-6 md:mb-10 max-w-sm mx-auto leading-relaxed"
                 >
                     Book a free consultation. We&apos;ll audit your workflows and show you exactly what to automate first.
@@ -43,10 +41,9 @@ export default function CTA() {
 
                 {/* CTA — 21st.dev ShimmerButton */}
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={false}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
                 >
                     <ShimmerButton
                         onClick={() => document.dispatchEvent(new Event("open-contact-modal"))}

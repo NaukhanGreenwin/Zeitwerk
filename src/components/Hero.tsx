@@ -64,9 +64,8 @@ function MetricCell({ metric, index }: { metric: typeof metrics[0]; index: numbe
     const displayed = useCountUp(metric.target, 1800, 1000 + index * 150, metric.decimals);
     return (
         <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
             className="px-5 py-4 bg-white"
         >
             <p className="text-[11px] text-neutral-600 uppercase tracking-wide mb-1">
@@ -77,9 +76,8 @@ function MetricCell({ metric, index }: { metric: typeof metrics[0]; index: numbe
                     {displayed}{metric.suffix}
                 </span>
                 <motion.span
-                    initial={{ opacity: 0, x: -4 }}
+                    initial={false}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 2.8 + index * 0.15 }}
                     className="text-[11px] font-medium text-emerald-600"
                 >
                     {metric.change}
@@ -186,17 +184,15 @@ export default function Hero() {
                 <div className="text-center max-w-3xl mx-auto">
                     {/* Red accent line */}
                     <motion.div
-                        initial={{ scaleX: 0 }}
+                        initial={false}
                         animate={{ scaleX: 1 }}
-                        transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                         className="w-10 h-[3px] md:w-12 bg-[#E2000F] mx-auto mb-6 md:mb-8 rounded-full origin-left"
                     />
 
                     {/* Headline */}
                     <motion.h1
-                        initial={{ opacity: 0, y: 24 }}
+                        initial={false}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7, delay: 0.2 }}
                         className="text-[clamp(1.75rem,5.5vw,4rem)] font-bold leading-[1.08] tracking-[-0.04em] text-neutral-900 mb-4 md:mb-6"
                     >
                         Automation built with
@@ -206,9 +202,8 @@ export default function Hero() {
 
                     {/* Subhead */}
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={false}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7, delay: 0.35 }}
                         className="text-[15px] md:text-[19px] leading-[1.65] text-neutral-800 max-w-2xl mx-auto mb-6 md:mb-12 px-1 md:px-0"
                     >
                         We engineer systems that eliminate manual work,
@@ -222,9 +217,8 @@ export default function Hero() {
                 {/* Dashboard preview */}
                 {mounted && (
                     <motion.div
-                        initial={{ opacity: 0, y: 60 }}
+                        initial={false}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
                         className="mt-8 md:mt-20 mx-auto max-w-4xl"
                     >
                         <div
@@ -276,7 +270,7 @@ export default function Hero() {
                                             return (
                                                 <motion.div
                                                     key={item.id}
-                                                    initial={{ opacity: 0, y: -20 }}
+                                                    initial={false}
                                                     animate={{ opacity: 1, y: 0 }}
                                                     className="flex items-center gap-3 py-1.5"
                                                 /* Removed heavy layout animations and spring physics for performance */

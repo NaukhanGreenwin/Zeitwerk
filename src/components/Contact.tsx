@@ -67,7 +67,7 @@ export default function ContactModal() {
             {open && (
                 <motion.div
                     key="contact-modal"
-                    initial={{ opacity: 0 }}
+                    initial={false}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
@@ -82,7 +82,7 @@ export default function ContactModal() {
                     {/* Modal */}
                     <div className="absolute inset-0 flex items-center justify-center p-4 pointer-events-none">
                         <motion.div
-                            initial={{ scale: 0.95, y: 20 }}
+                            initial={false}
                             animate={{ scale: 1, y: 0 }}
                             exit={{ scale: 0.95, y: 20 }}
                             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
@@ -113,7 +113,7 @@ export default function ContactModal() {
                                     {status === "sent" ? (
                                         <motion.div
                                             key="success"
-                                            initial={{ opacity: 0, scale: 0.95 }}
+                                            initial={false}
                                             animate={{ opacity: 1, scale: 1 }}
                                             className="flex flex-col items-center text-center py-12"
                                         >
