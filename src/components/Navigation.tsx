@@ -61,11 +61,11 @@ export default function Navigation() {
                                 name.rate = 0.8;
                                 speechSynthesis.speak(name);
                             }}
-                            className="ml-0.5 p-1 rounded-full text-neutral-300 hover:text-[#E2000F] hover:bg-red-50 transition-all duration-200"
+                            className="ml-2 p-3 rounded-full text-neutral-300 hover:text-[#E2000F] hover:bg-neutral-50 transition-all duration-200"
                             aria-label="Listen to pronunciation"
                             title="Hear how it's pronounced"
                         >
-                            <Volume2 size={14} />
+                            <Volume2 size={16} />
                         </button>
                     </a>
 
